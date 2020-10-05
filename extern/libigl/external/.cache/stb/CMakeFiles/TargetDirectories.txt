@@ -1,0 +1,3 @@
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/rebuild_cache.dir
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/edit_cache.dir
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/stb-download.dir

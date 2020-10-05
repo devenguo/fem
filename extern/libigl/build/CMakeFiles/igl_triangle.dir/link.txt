@@ -1,0 +1,1 @@
+/usr/bin/libtool -c -static -o libigl_triangle.a  CMakeFiles/igl_triangle.dir/include/igl/triangle/cdt.cpp.o CMakeFiles/igl_triangle.dir/include/igl/triangle/triangulate.cpp.o 

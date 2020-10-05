@@ -1,0 +1,14 @@
+# Target labels
+ tutorial_data-download
+# Source files and their labels
+/Users/guodewen/libigl/external/.cache/tutorial_data/CMakeFiles/tutorial_data-download
+/Users/guodewen/libigl/external/.cache/tutorial_data/CMakeFiles/tutorial_data-download.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/CMakeFiles/tutorial_data-download-complete.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-install.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-mkdir.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-download.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-update.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-patch.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-configure.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-build.rule
+/Users/guodewen/libigl/external/.cache/tutorial_data/tutorial_data-download-prefix/src/tutorial_data-download-stamp/tutorial_data-download-test.rule

@@ -1,0 +1,1 @@
+/usr/bin/libtool -c -static -o libtinyxml2.a  CMakeFiles/tinyxml2.dir/external/tinyxml2/tinyxml2.cpp.o 

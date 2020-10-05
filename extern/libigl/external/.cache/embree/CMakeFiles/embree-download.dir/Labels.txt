@@ -1,0 +1,14 @@
+# Target labels
+ embree-download
+# Source files and their labels
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/embree-download
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/embree-download.rule
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/embree-download-complete.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-install.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-mkdir.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-download.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-update.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-patch.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-configure.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-build.rule
+/Users/guodewen/libigl/external/.cache/embree/embree-download-prefix/src/embree-download-stamp/embree-download-test.rule

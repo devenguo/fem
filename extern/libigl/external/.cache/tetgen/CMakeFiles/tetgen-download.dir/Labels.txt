@@ -1,0 +1,14 @@
+# Target labels
+ tetgen-download
+# Source files and their labels
+/Users/guodewen/libigl/external/.cache/tetgen/CMakeFiles/tetgen-download
+/Users/guodewen/libigl/external/.cache/tetgen/CMakeFiles/tetgen-download.rule
+/Users/guodewen/libigl/external/.cache/tetgen/CMakeFiles/tetgen-download-complete.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-install.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-mkdir.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-download.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-update.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-patch.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-configure.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-build.rule
+/Users/guodewen/libigl/external/.cache/tetgen/tetgen-download-prefix/src/tetgen-download-stamp/tetgen-download-test.rule

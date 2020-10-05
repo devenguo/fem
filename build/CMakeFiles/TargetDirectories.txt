@@ -1,0 +1,14 @@
+/Volumes/Samsung_T5/fem/build/CMakeFiles/fem.dir
+/Volumes/Samsung_T5/fem/build/CMakeFiles/rebuild_cache.dir
+/Volumes/Samsung_T5/fem/build/CMakeFiles/edit_cache.dir
+/Volumes/Samsung_T5/fem/build/glad/CMakeFiles/rebuild_cache.dir
+/Volumes/Samsung_T5/fem/build/glad/CMakeFiles/edit_cache.dir
+/Volumes/Samsung_T5/fem/build/glad/CMakeFiles/glad.dir
+/Volumes/Samsung_T5/fem/build/glfw/CMakeFiles/rebuild_cache.dir
+/Volumes/Samsung_T5/fem/build/glfw/CMakeFiles/edit_cache.dir
+/Volumes/Samsung_T5/fem/build/glfw/src/CMakeFiles/rebuild_cache.dir
+/Volumes/Samsung_T5/fem/build/glfw/src/CMakeFiles/edit_cache.dir
+/Volumes/Samsung_T5/fem/build/glfw/src/CMakeFiles/glfw.dir
+/Volumes/Samsung_T5/fem/build/imgui/CMakeFiles/rebuild_cache.dir
+/Volumes/Samsung_T5/fem/build/imgui/CMakeFiles/edit_cache.dir
+/Volumes/Samsung_T5/fem/build/imgui/CMakeFiles/imgui.dir

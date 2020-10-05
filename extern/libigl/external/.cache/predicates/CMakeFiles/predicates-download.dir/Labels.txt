@@ -1,0 +1,14 @@
+# Target labels
+ predicates-download
+# Source files and their labels
+/Users/guodewen/libigl/external/.cache/predicates/CMakeFiles/predicates-download
+/Users/guodewen/libigl/external/.cache/predicates/CMakeFiles/predicates-download.rule
+/Users/guodewen/libigl/external/.cache/predicates/CMakeFiles/predicates-download-complete.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-install.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-mkdir.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-download.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-update.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-patch.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-configure.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-build.rule
+/Users/guodewen/libigl/external/.cache/predicates/predicates-download-prefix/src/predicates-download-stamp/predicates-download-test.rule

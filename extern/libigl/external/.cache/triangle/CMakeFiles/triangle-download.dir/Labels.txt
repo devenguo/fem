@@ -1,0 +1,14 @@
+# Target labels
+ triangle-download
+# Source files and their labels
+/Users/guodewen/libigl/external/.cache/triangle/CMakeFiles/triangle-download
+/Users/guodewen/libigl/external/.cache/triangle/CMakeFiles/triangle-download.rule
+/Users/guodewen/libigl/external/.cache/triangle/CMakeFiles/triangle-download-complete.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-install.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-mkdir.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-download.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-update.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-patch.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-configure.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-build.rule
+/Users/guodewen/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/triangle-download-test.rule

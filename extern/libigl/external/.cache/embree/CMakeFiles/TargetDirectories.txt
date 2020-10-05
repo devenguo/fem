@@ -1,0 +1,3 @@
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/rebuild_cache.dir
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/edit_cache.dir
+/Users/guodewen/libigl/external/.cache/embree/CMakeFiles/embree-download.dir

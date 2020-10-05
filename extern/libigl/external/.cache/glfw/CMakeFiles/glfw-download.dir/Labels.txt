@@ -1,0 +1,14 @@
+# Target labels
+ glfw-download
+# Source files and their labels
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/CMakeFiles/glfw-download
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/CMakeFiles/glfw-download.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/CMakeFiles/glfw-download-complete.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-install.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-mkdir.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-download.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-update.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-patch.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-configure.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-build.rule
+/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/glfw-download-test.rule

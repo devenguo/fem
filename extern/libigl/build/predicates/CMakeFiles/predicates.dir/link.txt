@@ -1,0 +1,1 @@
+/usr/bin/libtool -c -static -o ../libpredicates.a  CMakeFiles/predicates.dir/predicates.c.o 

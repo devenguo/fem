@@ -1,0 +1,14 @@
+# Target labels
+ stb-download
+# Source files and their labels
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/stb-download
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/stb-download.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/CMakeFiles/stb-download-complete.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-install.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-mkdir.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-download.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-update.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-patch.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-configure.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-build.rule
+/Users/guodewen/Documents/Lectures/Physics-based Simulation/pba_utoronto/computer-graphics-mass-spring-systems/libigl/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/stb-download-test.rule

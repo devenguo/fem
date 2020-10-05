@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+c0c2445a8f1ff7d601315ff91b4ad0ae CMakeFiles/triangle-download
+9a905e91bbd1c1b618e15dd3b345ab4c CMakeFiles/triangle-download-complete
+c9a2fbfcbe9e7131c566e8c65f153949 triangle-download-prefix/src/triangle-download-stamp/triangle-download-build
+cca39ab7ba52b05e8e0ef71cb589ab34 triangle-download-prefix/src/triangle-download-stamp/triangle-download-configure
+f415850538b832da81c687d301f45149 triangle-download-prefix/src/triangle-download-stamp/triangle-download-download
+91094e5ddb13bc0ba344869be3f6f6fa triangle-download-prefix/src/triangle-download-stamp/triangle-download-install
+655d43cd9843acd4e0788cdf647941a2 triangle-download-prefix/src/triangle-download-stamp/triangle-download-mkdir
+4427255bd696812331ecdaef6f5bcd34 triangle-download-prefix/src/triangle-download-stamp/triangle-download-patch
+d17b77e6e87d1c41bbb07748674fcebd triangle-download-prefix/src/triangle-download-stamp/triangle-download-test
+857137875a9d328b9f7b92cfb624afc2 triangle-download-prefix/src/triangle-download-stamp/triangle-download-update

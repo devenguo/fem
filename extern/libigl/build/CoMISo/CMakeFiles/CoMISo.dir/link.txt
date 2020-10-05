@@ -1,0 +1,1 @@
+/usr/bin/libtool -c -static -o ../libCoMISo.a  CMakeFiles/CoMISo.dir/Solver/EigenLDLTSolver.cc.o CMakeFiles/CoMISo.dir/Solver/MISolver.cc.o CMakeFiles/CoMISo.dir/Solver/ConstrainedSolver.cc.o CMakeFiles/CoMISo.dir/Solver/IterativeSolverT.cc.o CMakeFiles/CoMISo.dir/Solver/GMM_Tools.cc.o 
