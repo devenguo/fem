@@ -6,7 +6,11 @@ This Demo is the implementation of ***[FEM Simulation of 3D Deformable Solids: A
 
 ### Run
 `mkdir build`
+
 `cd build`
+
 `cmake .. -DCMAKE_BUILD_TYPE=Release`
+
 `make`
+
 `./fem`
