@@ -6,5 +6,5 @@ C_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Develop
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Volumes/Samsung_T5/fem/extern/libigl/external/glad/include 
+C_INCLUDES = -I/Users/guodewen/Desktop/fem/extern/libigl/external/glad/include 
 

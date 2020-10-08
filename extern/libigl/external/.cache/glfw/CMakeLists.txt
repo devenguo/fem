@@ -8,8 +8,8 @@ project(glfw-download NONE)
 include(ExternalProject)
 ExternalProject_Add(glfw-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/glfw/glfw.git;GIT_TAG;3.3
-                    SOURCE_DIR          "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/glfw"
-                    BINARY_DIR          "/Volumes/Samsung_T5/fem/build/glfw-build"
+                    SOURCE_DIR          "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/glfw"
+                    BINARY_DIR          "/Users/guodewen/Desktop/fem/build/glfw-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -1,7 +1,7 @@
 
 execute_process(
   COMMAND "/usr/local/bin/git" rev-list --max-count=1 HEAD
-  WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+  WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE head_sha
   OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -12,7 +12,7 @@ endif()
 
 execute_process(
   COMMAND "/usr/local/bin/git" show-ref 3.3.7
-  WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+  WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
   OUTPUT_VARIABLE show_ref_output
   )
 # If a remote ref is asked for, which can possibly move around,
@@ -38,7 +38,7 @@ endif()
 # yet).
 execute_process(
   COMMAND "/usr/local/bin/git" rev-list --max-count=1 3.3.7
-  WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+  WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE tag_sha
   OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -48,7 +48,7 @@ execute_process(
 if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
   execute_process(
     COMMAND "/usr/local/bin/git" fetch
-    WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+    WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
     RESULT_VARIABLE error_code
     )
   if(error_code)
@@ -59,7 +59,7 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     # Check if stash is needed
     execute_process(
       COMMAND "/usr/local/bin/git" status --porcelain
-      WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+      WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
       RESULT_VARIABLE error_code
       OUTPUT_VARIABLE repo_status
       )
@@ -73,7 +73,7 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     if(need_stash)
       execute_process(
         COMMAND "/usr/local/bin/git" stash save --all;--quiet
-        WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+        WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
         RESULT_VARIABLE error_code
         )
       if(error_code)
@@ -84,60 +84,60 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     # Pull changes from the remote branch
     execute_process(
       COMMAND "/usr/local/bin/git" rebase ${git_remote}/${git_tag}
-      WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+      WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
       RESULT_VARIABLE error_code
       )
     if(error_code)
       # Rebase failed: Restore previous state.
       execute_process(
         COMMAND "/usr/local/bin/git" rebase --abort
-        WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+        WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
       )
       if(need_stash)
         execute_process(
           COMMAND "/usr/local/bin/git" stash pop --index --quiet
-          WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+          WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
           )
       endif()
-      message(FATAL_ERROR "\nFailed to rebase in: '/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen/'.\nYou will have to resolve the conflicts manually")
+      message(FATAL_ERROR "\nFailed to rebase in: '/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen/'.\nYou will have to resolve the conflicts manually")
     endif()
 
     if(need_stash)
       execute_process(
         COMMAND "/usr/local/bin/git" stash pop --index --quiet
-        WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+        WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
         RESULT_VARIABLE error_code
         )
       if(error_code)
         # Stash pop --index failed: Try again dropping the index
         execute_process(
           COMMAND "/usr/local/bin/git" reset --hard --quiet
-          WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+          WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
           RESULT_VARIABLE error_code
           )
         execute_process(
           COMMAND "/usr/local/bin/git" stash pop --quiet
-          WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+          WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
           RESULT_VARIABLE error_code
           )
         if(error_code)
           # Stash pop failed: Restore previous state.
           execute_process(
             COMMAND "/usr/local/bin/git" reset --hard --quiet ${head_sha}
-            WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+            WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
           )
           execute_process(
             COMMAND "/usr/local/bin/git" stash pop --index --quiet
-            WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+            WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
           )
-          message(FATAL_ERROR "\nFailed to unstash changes in: '/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen/'.\nYou will have to resolve the conflicts manually")
+          message(FATAL_ERROR "\nFailed to unstash changes in: '/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen/'.\nYou will have to resolve the conflicts manually")
         endif()
       endif()
     endif()
   else()
     execute_process(
       COMMAND "/usr/local/bin/git" checkout 3.3.7
-      WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
+      WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
       RESULT_VARIABLE error_code
       )
     if(error_code)
@@ -149,12 +149,12 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
   if(init_submodules)
     execute_process(
       COMMAND "/usr/local/bin/git" submodule update --recursive --init 
-      WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen/"
+      WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen/"
       RESULT_VARIABLE error_code
       )
   endif()
   if(error_code)
-    message(FATAL_ERROR "Failed to update submodules in: '/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen/'")
+    message(FATAL_ERROR "Failed to update submodules in: '/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen/'")
   endif()
 endif()
 

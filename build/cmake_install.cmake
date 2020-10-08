@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/Samsung_T5/fem
+# Install script for directory: /Users/guodewen/Desktop/fem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Volumes/Samsung_T5/fem/build/glad/cmake_install.cmake")
-  include("/Volumes/Samsung_T5/fem/build/glfw/cmake_install.cmake")
-  include("/Volumes/Samsung_T5/fem/build/imgui/cmake_install.cmake")
+  include("/Users/guodewen/Desktop/fem/build/glad/cmake_install.cmake")
+  include("/Users/guodewen/Desktop/fem/build/glfw/cmake_install.cmake")
+  include("/Users/guodewen/Desktop/fem/build/imgui/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/Samsung_T5/fem/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/guodewen/Desktop/fem/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,15 +1,15 @@
 
-if(NOT "/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitinfo.txt" IS_NEWER_THAN "/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt")
-  message(STATUS "Avoiding repeated git clone, stamp file is up to date: '/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt'")
+if(NOT "/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitinfo.txt" IS_NEWER_THAN "/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt")
+  message(STATUS "Avoiding repeated git clone, stamp file is up to date: '/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt'")
   return()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E remove_directory "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui'")
+  message(FATAL_ERROR "Failed to remove directory: '/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -18,7 +18,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/local/bin/git" -c http.sslVerify=false clone --no-checkout --config advice.detachedHead=false "https://github.com/ocornut/imgui.git" "imgui"
-    WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external"
+    WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external"
     RESULT_VARIABLE error_code
     )
   math(EXPR number_of_tries "${number_of_tries} + 1")
@@ -33,7 +33,7 @@ endif()
 
 execute_process(
   COMMAND "/usr/local/bin/git" -c http.sslVerify=false checkout v1.69 --
-  WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui"
+  WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui"
   RESULT_VARIABLE error_code
   )
 if(error_code)
@@ -44,23 +44,23 @@ set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
     COMMAND "/usr/local/bin/git" -c http.sslVerify=false submodule update --recursive --init 
-    WORKING_DIRECTORY "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui"
+    WORKING_DIRECTORY "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui"
     RESULT_VARIABLE error_code
     )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui'")
+  message(FATAL_ERROR "Failed to update submodules in: '/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
   COMMAND ${CMAKE_COMMAND} -E copy
-    "/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitinfo.txt"
-    "/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt"
+    "/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitinfo.txt"
+    "/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Volumes/Samsung_T5/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Users/guodewen/Desktop/fem/extern/libigl/external/.cache/imgui/imgui-download-prefix/src/imgui-download-stamp/imgui-download-gitclone-lastrun.txt'")
 endif()
 

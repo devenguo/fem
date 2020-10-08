@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/Samsung_T5/fem/extern/libigl/external/glfw/src
+# Install script for directory: /Users/guodewen/Desktop/fem/extern/libigl/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

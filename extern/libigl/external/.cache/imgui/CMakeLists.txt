@@ -8,8 +8,8 @@ project(imgui-download NONE)
 include(ExternalProject)
 ExternalProject_Add(imgui-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/ocornut/imgui.git;GIT_TAG;v1.69
-                    SOURCE_DIR          "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/imgui"
-                    BINARY_DIR          "/Volumes/Samsung_T5/fem/build/imgui-build"
+                    SOURCE_DIR          "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/imgui"
+                    BINARY_DIR          "/Users/guodewen/Desktop/fem/build/imgui-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

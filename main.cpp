@@ -4,7 +4,7 @@
 #include <read_tetgen.h>
 #include <igl/readMESH.h>
 #include <vector>
-
+#include <math.h>
 int frame_rate = 1 / 5.e-4;
 double inf = 1.e5;
 Eigen::SparseMatrixd M; //lumped mass matrix
@@ -28,18 +28,24 @@ int max_time_step = 10000;
 
 void stress_tensor(Eigen::MatrixXd& P, const Eigen::MatrixXd& F, const double& mu, const double& lambda) {
     // Eigen::MatrixXd F_inv_trans = F.inverse().transpose();
-    // double J = fmax(F.determinant(), 0.01);
-    // P = mu * ( F - mu * F_inv_trans ) + lambda * log(J) * F_inv_trans;
+    // double J = F.determinant();
+    // if(J < 0.)
+    //     std::cout << J << std::endl;
+    // P = mu * ( F - mu * F_inv_trans ) + lambda * std::log(J) * F_inv_trans;
+
     Eigen::MatrixXd E(3, 3);
     E = .5 * (F.transpose() * F - Eigen::MatrixXd::Identity(3,3));
     P = F * (2 * mu * E + lambda * E.trace() * Eigen::MatrixXd::Identity(3,3));
+
+
 }
 
 void stress_differential(Eigen::MatrixXd& dP, Eigen::MatrixXd& F, Eigen::MatrixXd& dF, const double& mu, const double& lambda) {
     // Eigen::MatrixXd F_inv = F.inverse();
     // Eigen::MatrixXd F_inv_trans = F_inv.transpose();
-    // double J = fmax(F.determinant(), 0.01);
-    // dP = mu * dF + (mu - lambda * log(J)) * F_inv_trans * dF.transpose() * F_inv_trans + lambda * (F_inv * dF).trace() * F_inv_trans;
+    // double J = F.determinant();
+    // dP = mu * dF + (mu - lambda * std::log(J)) * F_inv_trans * dF.transpose() * F_inv_trans + lambda * (F_inv * dF).trace() * F_inv_trans;
+    
     Eigen::MatrixXd E(3, 3), dE(3, 3);
     E = .5 * (F.transpose() * F - Eigen::MatrixXd::Identity(3,3));
     dE = .5 * (dF.transpose() * F + F.transpose()*dF);
@@ -66,6 +72,9 @@ void compute_forces(const Eigen::MatrixXd& x,
             Ds.col(j) = x.block(3*vert_idx(j),0,3,1) - x.block(3*vert_idx(3),0,3,1);
         Eigen::MatrixXd F(3,3);
         F = Ds*B[i];
+        // double detF = F.determinant();
+        // if(detF < 0.)
+        //     std::cout << detF << std::endl;
         Eigen::MatrixXd P;
         stress_tensor(P, F, mu, lambda);
         Eigen::MatrixXd H;
@@ -78,7 +87,7 @@ void compute_forces(const Eigen::MatrixXd& x,
 }
 
 void compute_force_differentials(const Eigen::VectorXd& x,
-                                Eigen::VectorXd& f, //unused
+                                Eigen::VectorXd& f,
                                 const Eigen::VectorXd& dx,
                                 Eigen::VectorXd& df,
                                 const Eigen::MatrixXi& T,
@@ -162,15 +171,11 @@ void mesh_size_normalization(Eigen::MatrixXd& V, const Eigen::MatrixXi& T) {
         avg_edge_len += (V.row(vert_idx(0))-V.row(vert_idx(1))).norm();
     }
     avg_edge_len /= (T.rows()*1.);
-    // std::cout << avg_edge_len << std::endl; 
     V *= (1.36101/avg_edge_len);
 }
 
 int main() {
     read_tetgen(V, T, "../data/ellell.1.node", "../data/ellell.1.ele");
-    // read_tetgen(V, T, "../data/ellell.2.node", "../data/ellell.2.ele");
-    // read_tetgen(V, T, "../data/arma_6.node", "../data/arma_6.ele"); E = 1e2; mu = E / (2. * (1. + nu)); lambda = E * nu / ((1. + nu) * (1. - 2. * nu)); dt = 5e-4;
-    // igl::readMESH("../data/coarser_bunny.mesh", V, T, F);
     mesh_size_normalization(V, T);
     Eigen::VectorXd V_xyz = V.colwise().maxCoeff() - V.colwise().minCoeff();
     double volume_mesh = V_xyz(0) * V_xyz(1) * V_xyz(2);
@@ -238,7 +243,6 @@ int main() {
                     }
                     B.push_back(D.inverse());
                     W(i) = fabs(D.determinant()) / 6.;
-                    // std::cout << D.determinant() << std::endl;
                 }
                 //lumped mass matrix
                 Eigen::MatrixXd M_dense(x.rows(), x.rows());

@@ -6,7 +6,7 @@ C_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Develop
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Volumes/Samsung_T5/fem/extern/libigl/external/glfw/include -I/Volumes/Samsung_T5/fem/extern/libigl/external/glfw/src -I/Volumes/Samsung_T5/fem/build/glfw/src 
+C_INCLUDES = -I/Users/guodewen/Desktop/fem/extern/libigl/external/glfw/include -I/Users/guodewen/Desktop/fem/extern/libigl/external/glfw/src -I/Users/guodewen/Desktop/fem/build/glfw/src 
 
 # Custom flags: glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

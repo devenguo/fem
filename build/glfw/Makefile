@@ -48,10 +48,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/Samsung_T5/fem
+CMAKE_SOURCE_DIR = /Users/guodewen/Desktop/fem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/Samsung_T5/fem/build
+CMAKE_BINARY_DIR = /Users/guodewen/Desktop/fem/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Volumes/Samsung_T5/fem/build && $(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T5/fem/build/CMakeFiles /Volumes/Samsung_T5/fem/build/glfw/CMakeFiles/progress.marks
-	cd /Volumes/Samsung_T5/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Samsung_T5/fem/build/CMakeFiles 0
+	cd /Users/guodewen/Desktop/fem/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/guodewen/Desktop/fem/build/CMakeFiles /Users/guodewen/Desktop/fem/build/glfw/CMakeFiles/progress.marks
+	cd /Users/guodewen/Desktop/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guodewen/Desktop/fem/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Volumes/Samsung_T5/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/clean
+	cd /Users/guodewen/Desktop/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Volumes/Samsung_T5/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/preinstall
+	cd /Users/guodewen/Desktop/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Volumes/Samsung_T5/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/preinstall
+	cd /Users/guodewen/Desktop/fem/build && $(MAKE) -f CMakeFiles/Makefile2 glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Volumes/Samsung_T5/fem/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/guodewen/Desktop/fem/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Volumes/Samsung_T5/fem/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/guodewen/Desktop/fem/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

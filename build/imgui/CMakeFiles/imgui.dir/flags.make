@@ -6,5 +6,5 @@ CXX_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Devel
 
 CXX_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
-CXX_INCLUDES = -I/Volumes/Samsung_T5/fem/extern/libigl/external/libigl-imgui/../imgui -I/Volumes/Samsung_T5/fem/extern/libigl/external/libigl-imgui/. -I/Volumes/Samsung_T5/fem/extern/libigl/external/libigl-imgui/.. -I/Volumes/Samsung_T5/fem/extern/libigl/external/libigl-imgui/../imgui/examples -I/Volumes/Samsung_T5/fem/extern/libigl/external/glad/include -I/Volumes/Samsung_T5/fem/extern/libigl/external/glfw/include 
+CXX_INCLUDES = -I/Users/guodewen/Desktop/fem/extern/libigl/external/libigl-imgui/../imgui -I/Users/guodewen/Desktop/fem/extern/libigl/external/libigl-imgui/. -I/Users/guodewen/Desktop/fem/extern/libigl/external/libigl-imgui/.. -I/Users/guodewen/Desktop/fem/extern/libigl/external/libigl-imgui/../imgui/examples -I/Users/guodewen/Desktop/fem/extern/libigl/external/glad/include -I/Users/guodewen/Desktop/fem/extern/libigl/external/glfw/include 
 

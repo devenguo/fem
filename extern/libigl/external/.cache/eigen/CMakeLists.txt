@@ -8,8 +8,8 @@ project(eigen-download NONE)
 include(ExternalProject)
 ExternalProject_Add(eigen-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/eigenteam/eigen-git-mirror.git;GIT_TAG;3.3.7
-                    SOURCE_DIR          "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/eigen"
-                    BINARY_DIR          "/Volumes/Samsung_T5/fem/build/eigen-build"
+                    SOURCE_DIR          "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/eigen"
+                    BINARY_DIR          "/Users/guodewen/Desktop/fem/build/eigen-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

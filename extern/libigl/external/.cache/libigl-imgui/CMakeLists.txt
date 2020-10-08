@@ -8,8 +8,8 @@ project(libigl-imgui-download NONE)
 include(ExternalProject)
 ExternalProject_Add(libigl-imgui-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/libigl/libigl-imgui.git;GIT_TAG;07ecd3858acc71e70f0f9b2dea20a139bdddf8ae
-                    SOURCE_DIR          "/Volumes/Samsung_T5/fem/extern/libigl/cmake/../external/libigl-imgui"
-                    BINARY_DIR          "/Volumes/Samsung_T5/fem/build/libigl-imgui-build"
+                    SOURCE_DIR          "/Users/guodewen/Desktop/fem/extern/libigl/cmake/../external/libigl-imgui"
+                    BINARY_DIR          "/Users/guodewen/Desktop/fem/build/libigl-imgui-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
